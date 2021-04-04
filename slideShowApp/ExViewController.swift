@@ -8,8 +8,8 @@
 import UIKit
 
 class ExViewController: UIViewController {
-    //受け取るためのプロパティの宣言
     @IBOutlet weak var exImageView: UIImageView!
+    //受け取るためのプロパティの宣言
     var image : UIImage!
 
     override func viewDidLoad() {
