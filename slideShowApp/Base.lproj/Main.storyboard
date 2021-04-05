@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="slideShowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGT-19-sSf">
-                                <rect key="frame" x="20" y="64" width="374" height="350"/>
+                                <rect key="frame" x="20" y="20" width="374" height="350"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -30,7 +30,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-RI-Agj">
-                                <rect key="frame" x="343" y="430" width="41" height="36"/>
+                                <rect key="frame" x="343" y="386" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pc-ML-qaL">
-                                <rect key="frame" x="30" y="430" width="41" height="36"/>
+                                <rect key="frame" x="30" y="386" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibg-Dg-bUN">
-                                <rect key="frame" x="186.5" y="430" width="41" height="36"/>
+                                <rect key="frame" x="186.66666666666666" y="386" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
@@ -62,11 +62,15 @@
                             <constraint firstItem="MGT-19-sSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AeF-0b-fyh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUa-RI-Agj" secondAttribute="trailing" constant="30" id="BkA-SY-rDG"/>
                             <constraint firstItem="2pc-ML-qaL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="F5G-k1-WWS"/>
+                            <constraint firstItem="gUa-RI-Agj" firstAttribute="top" secondItem="MGT-19-sSf" secondAttribute="bottom" constant="16" id="QJH-Lz-E7J"/>
+                            <constraint firstItem="ibg-Dg-bUN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2pc-ML-qaL" secondAttribute="trailing" constant="8" symbolic="YES" id="WUA-kk-UqP"/>
                             <constraint firstItem="MGT-19-sSf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cWM-yI-4iz"/>
-                            <constraint firstItem="gUa-RI-Agj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oF3-Bl-OgY"/>
+                            <constraint firstItem="2pc-ML-qaL" firstAttribute="top" secondItem="MGT-19-sSf" secondAttribute="bottom" constant="16" id="d9z-FZ-Yuo"/>
+                            <constraint firstItem="ibg-Dg-bUN" firstAttribute="top" secondItem="MGT-19-sSf" secondAttribute="bottom" constant="16" id="f3C-2B-r5t"/>
+                            <constraint firstItem="2pc-ML-qaL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gPh-gD-6IZ"/>
+                            <constraint firstItem="gUa-RI-Agj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ibg-Dg-bUN" secondAttribute="trailing" constant="8" symbolic="YES" id="i1i-rg-a1J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUa-RI-Agj" secondAttribute="trailing" constant="30" id="mc9-ox-4MZ"/>
                             <constraint firstItem="MGT-19-sSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFG-SH-nB1"/>
-                            <constraint firstItem="2pc-ML-qaL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="obW-aI-pSs"/>
-                            <constraint firstItem="ibg-Dg-bUN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xUG-jp-JSk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -91,32 +95,32 @@
             <objects>
                 <viewController id="vKw-Z1-fHT" customClass="ExViewController" customModule="slideShowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tDI-Ms-Qpk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wei-Wh-jEz">
-                                <rect key="frame" x="20" y="30" width="374" height="553"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="553" id="Y9R-kD-QgB"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sl-kn-eg8">
-                                <rect key="frame" x="186.5" y="613" width="41" height="36"/>
+                                <rect key="frame" x="186.66666666666666" y="530" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="cMP-Vi-Hyz" kind="unwind" unwindAction="unwind:" id="XL2-1r-hHm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wei-Wh-jEz">
+                                <rect key="frame" x="11" y="20" width="392" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="HBx-mb-Bod"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1PV-DA-LOB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wei-Wh-jEz" firstAttribute="top" secondItem="1PV-DA-LOB" secondAttribute="top" constant="30" id="AJs-gR-fxm"/>
-                            <constraint firstItem="wei-Wh-jEz" firstAttribute="leading" secondItem="tDI-Ms-Qpk" secondAttribute="leadingMargin" id="WIr-bV-rIC"/>
+                            <constraint firstItem="6Sl-kn-eg8" firstAttribute="top" secondItem="wei-Wh-jEz" secondAttribute="bottom" constant="10" id="7aG-bV-vVv"/>
                             <constraint firstItem="wei-Wh-jEz" firstAttribute="centerX" secondItem="tDI-Ms-Qpk" secondAttribute="centerX" id="WpD-fq-YSa"/>
-                            <constraint firstItem="6Sl-kn-eg8" firstAttribute="top" secondItem="wei-Wh-jEz" secondAttribute="bottom" constant="30" id="YmX-7w-86u"/>
-                            <constraint firstItem="6Sl-kn-eg8" firstAttribute="centerX" secondItem="tDI-Ms-Qpk" secondAttribute="centerX" id="iLy-5W-x3q"/>
+                            <constraint firstItem="1PV-DA-LOB" firstAttribute="trailing" secondItem="wei-Wh-jEz" secondAttribute="trailing" constant="11" id="XWr-O1-Trl"/>
+                            <constraint firstItem="wei-Wh-jEz" firstAttribute="top" secondItem="1PV-DA-LOB" secondAttribute="top" constant="20" id="ilz-AH-q4b"/>
+                            <constraint firstItem="6Sl-kn-eg8" firstAttribute="centerX" secondItem="wei-Wh-jEz" secondAttribute="centerX" id="ych-l2-8cP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -126,7 +130,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jI-iT-XKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cMP-Vi-Hyz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="911.59420289855075" y="93.080357142857139"/>
+            <point key="canvasLocation" x="911.59420289855075" y="92.934782608695656"/>
         </scene>
     </scenes>
     <resources>
