@@ -13,10 +13,10 @@
 		49ED44FC2616071A009B861B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ED44FA2616071A009B861B /* Main.storyboard */; };
 		49ED44FE2616071C009B861B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ED44FD2616071C009B861B /* Assets.xcassets */; };
 		49ED45012616071C009B861B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ED44FF2616071C009B861B /* LaunchScreen.storyboard */; };
-		49ED450A26160A83009B861B /* 01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED450926160A83009B861B /* 01.jpeg */; };
-		49ED450C26160AA4009B861B /* 02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED450B26160AA4009B861B /* 02.jpeg */; };
-		49ED450E26160AB5009B861B /* 03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED450D26160AB5009B861B /* 03.jpeg */; };
 		49ED451126192341009B861B /* ExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED451026192341009B861B /* ExViewController.swift */; };
+		49ED453D261B1944009B861B /* 02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED453C261B1944009B861B /* 02.jpeg */; };
+		49ED4540261B19FD009B861B /* 01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED453F261B19FD009B861B /* 01.jpeg */; };
+		49ED4543261B1A05009B861B /* 03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 49ED4542261B1A05009B861B /* 03.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		49ED44FD2616071C009B861B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49ED45002616071C009B861B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49ED45022616071C009B861B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49ED450926160A83009B861B /* 01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 01.jpeg; path = "../../../Pictures/写真ライブラリ.photoslibrary/resources/derivatives/9/01.jpeg"; sourceTree = "<group>"; };
-		49ED450B26160AA4009B861B /* 02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 02.jpeg; path = "../../../Pictures/写真ライブラリ.photoslibrary/resources/derivatives/B/02.jpeg"; sourceTree = "<group>"; };
-		49ED450D26160AB5009B861B /* 03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 03.jpeg; path = "../../../Pictures/写真ライブラリ.photoslibrary/resources/derivatives/7/03.jpeg"; sourceTree = "<group>"; };
 		49ED451026192341009B861B /* ExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExViewController.swift; sourceTree = "<group>"; };
+		49ED453C261B1944009B861B /* 02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpeg; sourceTree = "<group>"; };
+		49ED453F261B19FD009B861B /* 01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpeg; sourceTree = "<group>"; };
+		49ED4542261B1A05009B861B /* 03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				49ED44F82616071A009B861B /* ViewController.swift */,
 				49ED451026192341009B861B /* ExViewController.swift */,
 				49ED44FA2616071A009B861B /* Main.storyboard */,
-				49ED450926160A83009B861B /* 01.jpeg */,
-				49ED450B26160AA4009B861B /* 02.jpeg */,
-				49ED450D26160AB5009B861B /* 03.jpeg */,
+				49ED453F261B19FD009B861B /* 01.jpeg */,
+				49ED453C261B1944009B861B /* 02.jpeg */,
+				49ED4542261B1A05009B861B /* 03.jpeg */,
 				49ED44FD2616071C009B861B /* Assets.xcassets */,
 				49ED44FF2616071C009B861B /* LaunchScreen.storyboard */,
 				49ED45022616071C009B861B /* Info.plist */,
@@ -136,11 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49ED450E26160AB5009B861B /* 03.jpeg in Resources */,
-				49ED450C26160AA4009B861B /* 02.jpeg in Resources */,
+				49ED4543261B1A05009B861B /* 03.jpeg in Resources */,
 				49ED45012616071C009B861B /* LaunchScreen.storyboard in Resources */,
+				49ED453D261B1944009B861B /* 02.jpeg in Resources */,
 				49ED44FE2616071C009B861B /* Assets.xcassets in Resources */,
-				49ED450A26160A83009B861B /* 01.jpeg in Resources */,
+				49ED4540261B19FD009B861B /* 01.jpeg in Resources */,
 				49ED44FC2616071A009B861B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
